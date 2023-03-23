@@ -4,6 +4,34 @@
   "modules": [
     {
       "kind": "javascript-module",
+      "path": "api/badgesearch.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "handler",
+          "parameters": [
+            {
+              "name": "request"
+            },
+            {
+              "name": "res"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "handler",
+            "module": "api/badgesearch.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/project-2.js",
       "declarations": [
         {
@@ -17,15 +45,54 @@
               "type": {
                 "text": "string"
               },
-              "default": "'My app'",
+              "default": "\"Technology & Information\"",
               "privacy": "public",
               "attribute": "header"
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"APA Style Citations: Introduction\"",
+              "privacy": "public",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "author",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Creator: Victoria Raish\"",
+              "privacy": "public",
+              "attribute": "author"
+            },
+            {
+              "kind": "field",
+              "name": "img",
+              "default": "APAStyle",
+              "privacy": "public",
+              "attribute": "img"
             }
           ],
           "attributes": [
             {
               "name": "header",
               "fieldName": "header"
+            },
+            {
+              "name": "title",
+              "fieldName": "title"
+            },
+            {
+              "name": "author",
+              "fieldName": "author"
+            },
+            {
+              "name": "img",
+              "fieldName": "img"
             }
           ],
           "superclass": {
@@ -37,6 +104,14 @@
         }
       ],
       "exports": [
+        {
+          "kind": "js",
+          "name": "Project2",
+          "declaration": {
+            "name": "Project2",
+            "module": "src/project-2.js"
+          }
+        },
         {
           "kind": "custom-element-definition",
           "name": "project-2",
