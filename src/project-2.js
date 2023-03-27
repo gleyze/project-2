@@ -34,24 +34,77 @@ export class Project2 extends LitElement {
     }
 
     .badge {
-      background-color: blue;
-      color: white;
-      padding: 4px 8px;
-      text-align: center;
-      border-radius: 5px;
-      width: 400px;
-      padding: 10px 0;
-      /* margin: 0 auto; */
-      justify-content: space-between;
+      display: block;
+      letter-spacing: 0.02em;
+      float: left;
+      height: 135px;
+      width: 280px;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      font-family: "Effra", sans-serif;
+      font-size: 12px;
+      line-height: 20px;
+      margin: 0 10px 10px 0;
+      background: transparent;
+      border: 1px solid #fff;
+      border-color: #3e98d3;
+      border-radius: 6px;
+    }
+
+    .badge-topbar {
+      background-color: #cfe6f4;
+      border-left: 15px solid #3e98d3;
+      color: #333333;
+      font-weight: 400;
+      height: 2.25em;
+      line-height: 2.25em;
+      padding: 0 0.75em;
+    }
+    .badge-body {
+      border-left: 15px solid #3e98d3;
+      vertical-align: top;
+      padding: 10px 10px;
+      overflow: hidden;
+      position: relative;
+      font-size: 12px;
+      font-family: "Effra", sans-serif;
+      margin-bottom: 10px;
+    }
+    .badgepic {
+      float: right;
+      width: 60px;
+      height: 60px;
+      display: block;
+      background-size: contain;
+    }
+    .creator {
+      border-left: 15px solid #3e98d3;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      min-height: 30px;
+    }
+    .badge-creator-name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-bottom: 5px;
+      margin-left: 10px;
+      margin-right: 15px;
+      font-weight: 400;
+      font-size: 13px;
+      font-family: "Effra", sans-serif;
     }
   `;
 
   constructor() {
     super();
-    this.header = "Technology & Information";
-    this.title = "APA Style Citations: Introduction";
-    this.author = "Creator: Victoria Raish";
-    this.img = APAStyle;
+    this.header = "";
+    this.title = "";
+    this.author = "";
+    this.img = "";
   }
 
   render() {
@@ -68,20 +121,27 @@ export class Project2 extends LitElement {
           </form>
         </div>
         
-        <div class="badge">
-          <h3 class="header">
-            ${this.header}
-          </h3>
-          <h1 class="title">
-          ${this.title}
-          </h1>
-          </h1>
-          <h2 class="author">
-          ${this.author}
-          </h2>
-          <img src="${this.img}">
-        </div>
 
+
+          <div class="badge">
+            <div class="badge-topbar">
+              <span class="badge-title">Technology & Information</span>
+            </div>
+            <div class="badge-body">
+              <div class="badge-image">
+                <img
+                  class="badgepic"
+                  src="https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png"
+                  alt="badge"
+                />
+              </div>
+              <h3>APA Style Citations: Introduction</h3>
+            </div>
+            <div class="creator">
+              <div class="badge-creator-name">Creator: Victoria Raish </div>
+            </div>
+          </div>
+        </div>
       </main>
     `;
   }
