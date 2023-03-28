@@ -52,7 +52,7 @@ export class Project2 extends LitElement {
       border-radius: 6px;
     }
 
-    .badge-topbar {
+    .badge-header {
       background-color: #cfe6f4;
       border-left: 15px solid #3e98d3;
       color: #333333;
@@ -71,7 +71,7 @@ export class Project2 extends LitElement {
       font-family: "Effra", sans-serif;
       margin-bottom: 10px;
     }
-    .badgepic {
+    .badgeimg {
       float: right;
       width: 60px;
       height: 60px;
@@ -86,7 +86,7 @@ export class Project2 extends LitElement {
       right: 0;
       min-height: 30px;
     }
-    .badge-creator-name {
+    .creator-name {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -101,10 +101,10 @@ export class Project2 extends LitElement {
 
   constructor() {
     super();
-    this.header = "";
-    this.title = "";
-    this.author = "";
-    this.img = "";
+    this.header = "Technology & Information";
+    this.title = "APA Style Citations: Introduction ";
+    this.creator = "Creator: Victoria Raish";
+    this.img = APAStyle;
   }
 
   render() {
@@ -120,29 +120,31 @@ export class Project2 extends LitElement {
             />
           </form>
         </div>
-        
+  
 
-
-          <div class="badge">
-            <div class="badge-topbar">
-              <span class="badge-title">Technology & Information</span>
+        <div class="badge">
+            <div class="badge-header">
+              <span class="header">${this.header}</span>
             </div>
+
             <div class="badge-body">
               <div class="badge-image">
                 <img
-                  class="badgepic"
-                  src="https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png"
-                  alt="badge"
-                />
+                  class="badgeimg"
+                  src="https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png"/>
               </div>
-              <h3>APA Style Citations: Introduction</h3>
+
+            <div class="badge-title">
+              <span class="title">${this.title}</span>
             </div>
+            
             <div class="creator">
-              <div class="badge-creator-name">Creator: Victoria Raish </div>
+              <div class="creator-name">${this.creator}</div>
             </div>
           </div>
         </div>
-      </main>
+  </main>
+
     `;
   }
 }

@@ -1,15 +1,16 @@
 import { LitElement, html, css } from 'lit';
 import "./project-2.js";
 
-export class Badge extends LitElement{
+export class BadgeList extends LitElement{
 
     static get tag(){
-    return 'badge';
+    return 'badge-list';
     }
 
     static get properties() {
         return{
             badges: {type: Array},
+
         }
     }
 
@@ -21,7 +22,7 @@ export class Badge extends LitElement{
     }
 
     updateBadges(){
-        const address = '../api/badgesearch';
+        const address = new URL('../assets/badgesearch.json', import.meta.url).href;
         fetch(address).then((response) => {
             if (response.ok){
                 return response.json()
@@ -49,21 +50,19 @@ export class Badge extends LitElement{
         `;
     }
 
-    render(){
+    render() {
         return html`
-        <h2> ${this.team}</h2>
         <div class="wrapper">
-            ${this.badges.map(badge =>     
-            html`
+            ${this.badges.map(badge => html`
             <div class="item">
-                <project-2 header="${badges.header}" title="${badges.title}" author="${badges.author}" img="${badges.img}"></project-2>
+                <project-2 header="${badge.header}" img="${badge.img}" title="${badge.title}" creator="${badge.creator}"></project-2>
             </div>
             `)}
         </div>
-        `
+        `;
     }
 
 
 }
 
-customElements.define(Badge.tag, Badge);
+customElements.define(Badges.tag, Badges);

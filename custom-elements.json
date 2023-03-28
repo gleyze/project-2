@@ -32,6 +32,66 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/badge-list.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "BadgeList",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true
+            },
+            {
+              "kind": "method",
+              "name": "updateBadges"
+            },
+            {
+              "kind": "field",
+              "name": "badges",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "privacy": "public",
+              "attribute": "badges"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "badges",
+              "fieldName": "badges"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BadgeList",
+          "declaration": {
+            "name": "BadgeList",
+            "module": "src/badge-list.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "Badges",
+            "module": "src/badge-list.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/project-2.js",
       "declarations": [
         {
@@ -55,19 +115,17 @@
               "type": {
                 "text": "string"
               },
-              "default": "\"APA Style Citations: Introduction\"",
+              "default": "\"APA Style Citations: Introduction \"",
               "privacy": "public",
               "attribute": "title"
             },
             {
               "kind": "field",
-              "name": "author",
+              "name": "creator",
               "type": {
                 "text": "string"
               },
-              "default": "\"Creator: Victoria Raish\"",
-              "privacy": "public",
-              "attribute": "author"
+              "default": "\"Creator: Victoria Raish\""
             },
             {
               "kind": "field",
@@ -75,6 +133,12 @@
               "default": "APAStyle",
               "privacy": "public",
               "attribute": "img"
+            },
+            {
+              "kind": "field",
+              "name": "author",
+              "privacy": "public",
+              "attribute": "author"
             }
           ],
           "attributes": [
