@@ -4,7 +4,7 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "api/badgesearch.js",
+      "path": "api/badge-search.js",
       "declarations": [
         {
           "kind": "function",
@@ -25,7 +25,7 @@
           "name": "default",
           "declaration": {
             "name": "handler",
-            "module": "api/badgesearch.js"
+            "module": "api/badge-search.js"
           }
         }
       ]
@@ -84,7 +84,7 @@
         {
           "kind": "custom-element-definition",
           "declaration": {
-            "name": "Badges",
+            "name": "BadgeList",
             "module": "src/badge-list.js"
           }
         }
@@ -133,6 +133,30 @@
               "default": "APAStyle",
               "privacy": "public",
               "attribute": "img"
+            },
+            {
+              "kind": "field",
+              "name": "bordertopcolor",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "bordermiddlecolor",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "borderbottomcolor",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
             },
             {
               "kind": "field",

@@ -1,6 +1,7 @@
 export default async function handler(request, res){
+    console.log("in heres")
 
-    const roster = [
+    const badgesearch = [
         {
             "header": "Technology & Information",
             "img": "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
@@ -18,6 +19,12 @@ export default async function handler(request, res){
             "title": "IST Careers - Meet a Coach - Level 2",
             "img": "https://badgesapp.psu.edu/uploads/badge/image/687/icon108-color16.png",
             "creator": "Rita Griffith"
+        },
+        {
+            "header": "Agriculture & Natural Resources",
+            "title": "[test] Treat Yourself",
+            "img": "https://badgesapp.psu.edu/uploads/badge/image/676/icon77-color14.png",
+            "creator": "Allain Daigle"
         }
     ];
 
@@ -26,5 +33,5 @@ export default async function handler(request, res){
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
     res.setHeader("Access-Control-Allow-Headers", "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version");
-    res.json(badge-search);
+    res.json(badgesearch);
 }

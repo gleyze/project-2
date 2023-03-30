@@ -17,12 +17,14 @@ export class BadgeList extends LitElement{
     constructor(){
         super();
         this.badges = [];
-        this.updateBadged();
+        this.updateBadges();
         console.log(this.badges)
     }
 
     updateBadges(){
-        const address = new URL('../assets/badgesearch.json', import.meta.url).href;
+        // const address = new URL('../api/badge-search', import.meta.url).href;
+        console.log("Calling backend")
+        const address = '../api/badge-search'
         fetch(address).then((response) => {
             if (response.ok){
                 return response.json()
@@ -31,6 +33,7 @@ export class BadgeList extends LitElement{
         })
 
         .then((data) => {
+            console.log(data)
             this.badges = data;
         });
     }
@@ -65,4 +68,4 @@ export class BadgeList extends LitElement{
 
 }
 
-customElements.define(Badges.tag, Badges);
+customElements.define(BadgeList.tag, BadgeList);

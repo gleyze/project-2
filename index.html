@@ -13,18 +13,117 @@
       margin: 0;
       padding: 0;
       font-family: sans-serif;
-      background-color: #ededed;
+      background-color: #e9ecf3;
+    }
+    .pageheader{
+      border-color: white;
+      text-align: left;
+      font-family: "Effra", sans-serif;
+      border-width: 10px;
+      width: 2000px;
+      height: 60px;
+      margin: auto;
+      background-color: white;
+    }
+    .PSUDigitalBadges{
+      text-align: left;
+      font-family: "Effra", sans-serif;
+      padding: 10px;
+      font-size: 16px;
+      color: #333333;
+      font-weight: bold;
+      padding-left: 50px;
+    }
+    .explore{
+      text-align: left;
+      font-family: "Effra", sans-serif;
+      font-size: 30px;
+      color: #333333;
+      font-weight: lighter;
+      padding-left: 50px;
+    }
+    .square{
+      border-color: white;
+      text-align: left;
+      font-family: "Effra", sans-serif;
+      padding: 20px;
+      border-width: 10px;
+      width: 1300px;
+      margin: auto;
+      background-color: white;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .badgesquare{
+      border-color: white;
+      text-align: left;
+      padding: 20px;
+      border-width: 10px;
+      width: 1300px;
+      height: 200px;
+      margin: auto;
+      background-color: white;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .searchbar {
+      box-shadow: 1px 1px 1px 2px gray;
+      margin: auto;
+      margin-top: 5px;
+      width: fit-content;
+      border-radius: 5px;
+      padding: 2px;
+      
+    }
+    .searchInput {
+      width: 1200px;
+      height: 50px;
+      border-radius: 5px;
+      
+      
+    }
+    .icon{
+      width: 45px;
     }
   </style>
   <title>project-2</title>
 </head>
-
 <body>
+  <main>
+    <div class="page"> 
+      <div class="pageheader">
+        <div class="PSUDigitalBadges">
+          <p>Penn State Digital Badges</p>
+        </div>
+      </div>
+    <div class="explore">
+      <p>Explore</p>
+    </div>
+    <div class="square">
+      <p>Explore our content in a self-guided manner. Want us to guide you through learning new skills? Try out Missions. 
+        Looking for other people with similar focus? Find them in Groups. Interested in viewing all the options within a certain subject area? 
+        You can do that with Topics.</p>
+
+        <div class="searchbar">
+        <form>
+          <simple-icon icon="search" class="icon"></simple-icon>
+          <input
+            class="searchInput"
+            type="text"
+            placeholder="Search Content, Topics, and People"
+          />
+        </form>
+      </div>
+    </div> -->
   
+     <div class="badgesquare">
+      <p>Looking for something brand spankin' new? Here are the most recently added badges!</p>
+      <badge-list></badge-list>
+      </div>
   <project-2></project-2>
-  <badge-list></badge-list>
 
   <script type="module" src="./src/project-2.js"></script>
+  <script type="module" src="./src/badge-list.js"></script>
 </body>
 
 </html>
