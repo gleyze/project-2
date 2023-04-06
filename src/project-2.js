@@ -32,7 +32,6 @@ export class Project2 extends LitElement {
       border-radius: 5px;
       border-width: 1px;
     }
-
     .badge-header {
       background-color: #cfe6f4;
       border-left: 15px solid #3e98d3;
@@ -59,7 +58,6 @@ export class Project2 extends LitElement {
       font-size: 24px;
       letter-spacing: 1px;
       font-family: "Effra", sans-serif;
-
     }
     .badgeimg {
       float: right;
@@ -119,7 +117,6 @@ export class Project2 extends LitElement {
           <p>Explore our content in a self-guided manner. Want us to guide you through learning new skills? Try out Missions. 
             Looking for other people with similar focus? Find them in Groups. Interested in viewing all the options within a certain subject area? 
             You can do that with Topics.</p>
-
             <div class="searchbar">
             <form>
               <simple-icon icon="search" class="icon"></simple-icon>
@@ -139,12 +136,10 @@ export class Project2 extends LitElement {
                 <span class="header">${this.header}, ${this.bordertopcolor}</span>
                 
               </div>
-
               <div class="badge-body">
                 <div class="badge-image">
                     <img class="badgeimg" src="${this.img}" >
                 </div>
-
                 <div class="badge-title">
                 <div class="title">${this.title}</div>
                 </div>
@@ -153,12 +148,10 @@ export class Project2 extends LitElement {
               <div class="creator">
                 <div class="creator-name">${this.creator}</div>
               </div>
-
           </div>
         <!-- </div>   -->
        <!-- </div> -->
       <!-- </main> -->
-
     `;
   }
 }

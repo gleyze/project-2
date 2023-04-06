@@ -1,5 +1,4 @@
 export default async function handler(request, res){
-    console.log("in heres")
 
     const badgesearch = [
         {

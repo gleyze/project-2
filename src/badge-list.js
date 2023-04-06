@@ -10,6 +10,7 @@ export class BadgeList extends LitElement{
     static get properties() {
         return{
             badges: {type: Array},
+            searchForThis: {type: String}
 
         }
     }
@@ -18,12 +19,11 @@ export class BadgeList extends LitElement{
         super();
         this.badges = [];
         this.updateBadges();
-        console.log(this.badges)
+        this.searchForThis = '';
+        this.searchThis(this.badges,this.searchForThis);
     }
 
     updateBadges(){
-        // const address = new URL('../api/badge-search', import.meta.url).href;
-        console.log("Calling backend")
         const address = '../api/badge-search'
         fetch(address).then((response) => {
             if (response.ok){
@@ -33,7 +33,6 @@ export class BadgeList extends LitElement{
         })
 
         .then((data) => {
-            console.log(data)
             this.badges = data;
         });
     }
@@ -53,17 +52,44 @@ export class BadgeList extends LitElement{
         `;
     }
 
+    searchThis(items, searchForThis){
+        return items.filter((thing) => 
+        {
+          for (var item in thing)
+          {
+            if (thing[item].toString().toLowerCase().includes(searchForThis.toLowerCase()))
+            {
+              return true;
+            }
+          }
+          return false;
+        });
+    }
+
     render() {
         return html`
         <div class="wrapper">
-            ${this.badges.map(badge => html`
+        ${this.searchThis(this.badges,this.searchForThis).map(badge => html`
             <div class="item">
-                <project-2 header="${badge.header}" img="${badge.img}" title="${badge.title}" creator="${badge.creator}"></project-2>
+            <project-2 header="${badge.header}" img="${badge.img}" title="${badge.title}" creator="${badge.creator}"></project-2>
             </div>
             `)}
         </div>
         `;
     }
+
+
+    // render() {
+    //     return html`
+    //     <div class="wrapper">
+    //         ${this.badges.map(badge => html`
+    //         <div class="item">
+    //             <project-2 header="${badge.header}" img="${badge.img}" title="${badge.title}" creator="${badge.creator}"></project-2>
+    //         </div>
+    //         `)}
+    //     </div>
+    //     `;
+    // }
 
 
 }
