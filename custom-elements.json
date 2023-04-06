@@ -229,44 +229,19 @@
               "type": {
                 "text": "string"
               },
-              "default": "\"Creator: Victoria Raish\""
+              "default": "\"Creator: Victoria Raish\"",
+              "privacy": "public",
+              "attribute": "creator"
             },
             {
               "kind": "field",
               "name": "img",
-              "default": "APAStyle",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"search\"",
               "privacy": "public",
               "attribute": "img"
-            },
-            {
-              "kind": "field",
-              "name": "bordertopcolor",
-              "type": {
-                "text": "string"
-              },
-              "default": "\"\""
-            },
-            {
-              "kind": "field",
-              "name": "bordermiddlecolor",
-              "type": {
-                "text": "string"
-              },
-              "default": "\"\""
-            },
-            {
-              "kind": "field",
-              "name": "borderbottomcolor",
-              "type": {
-                "text": "string"
-              },
-              "default": "\"\""
-            },
-            {
-              "kind": "field",
-              "name": "author",
-              "privacy": "public",
-              "attribute": "author"
             }
           ],
           "attributes": [
@@ -279,8 +254,8 @@
               "fieldName": "title"
             },
             {
-              "name": "author",
-              "fieldName": "author"
+              "name": "creator",
+              "fieldName": "creator"
             },
             {
               "name": "img",

@@ -43,7 +43,7 @@ export class BadgeList extends LitElement{
             display: block;
         }
         .wrapper{
-            border: 2px solid black;
+            /* border: 2px solid black; */
             display: flex;
         }
         .item{

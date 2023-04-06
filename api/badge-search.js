@@ -3,26 +3,26 @@ export default async function handler(request, res){
     const badgesearch = [
         {
             "header": "Technology & Information",
-            "img": "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
+            "img": "social:whatshot",
             "title": "APA Style Citations: Introduction",
             "creator": "Victoria Raish"
         },
         {
             "header": "Education",
             "title": "IST Career Sources",
-            "img": "https://badgesapp.psu.edu/uploads/badge/image/692/icon125-color15.png",
+            "img": "social:school",
             "creator": "Cassie Rosas-Carson"
         },
         {
             "header": "Professional Skills",
             "title": "IST Careers - Meet a Coach - Level 2",
-            "img": "https://badgesapp.psu.edu/uploads/badge/image/687/icon108-color16.png",
+            "img": "social:people-outline",
             "creator": "Rita Griffith"
         },
         {
             "header": "Agriculture & Natural Resources",
             "title": "[test] Treat Yourself",
-            "img": "https://badgesapp.psu.edu/uploads/badge/image/676/icon77-color14.png",
+            "img": "places:spa",
             "creator": "Allain Daigle"
         }
     ];

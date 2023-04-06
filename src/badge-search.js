@@ -73,7 +73,7 @@ body {
       width: 80%;
       background-color: white;
       font-size: 20px;
-      margin: auto;
+      margin: 50px;
       padding: 10px;
       display: block;
     }
@@ -113,15 +113,17 @@ body {
                             <div class="searchbar">
                                 <search-bar @word-changed="${this.wordChanged}"></search-bar>
                             </div>
+                    </div>       
 
+                    <div class="square">
                         <div class="badgeList">
-                            <div class="listHeading">
+                            <p>
                                 Looking for something brand spankin' new? Here are the most recently added badges!
-                            </div>
+                            </p>
 
                             <badge-list searchForThis="${this.searchForThis}"></badge-list>
                         </div>
-                    </div>
+                        </div>
                     </div>
                     </main>
 
