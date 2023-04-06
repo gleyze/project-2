@@ -59,7 +59,7 @@ export class Project2 extends LitElement {
     .badge-title{
       font-weight: 100;
       font-weight: lighter;
-      font-size: 24px;
+      font-size: 22px;
       letter-spacing: 1px;
       font-family: "Effra", sans-serif;
       width: 200px;
