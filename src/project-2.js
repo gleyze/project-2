@@ -18,12 +18,10 @@ export class Project2 extends LitElement {
 
   static styles = css`
     .badge {
-      display: block;
+      /* display: block; */
       letter-spacing: 0.02em; 
       height: 135px;
       width: 280px;
-      cursor: pointer;
-      text-decoration: none;
       position: relative;
       font-family: "Effra", sans-serif;
       font-size: 12px;
@@ -48,7 +46,6 @@ export class Project2 extends LitElement {
     }
     .badge-body {
       border-left: 15px solid #3e98d3;
-      /* vertical-align: top; */
       padding: 10px 10px;
       overflow: hidden;
       position: relative;
@@ -56,20 +53,20 @@ export class Project2 extends LitElement {
       font-family: "effra", sans-serif;
       margin-bottom: 10px;
       display: block;
+      display: flex;
+      align-items: center;
     }
     .badge-title{
-      font-weight: 100; //need to make it thinner??
+      font-weight: 100;
       font-weight: lighter;
       font-size: 24px;
       letter-spacing: 1px;
       font-family: "Effra", sans-serif;
-      float: left;
       width: 200px;
+      margin-right: 16px;
     }
     .badge-image {
-      float: right;
-      width: 60px;
-      display: inline;
+      width: 100px;
     }
     .creator {
       border-left: 15px solid #3e98d3;
@@ -90,6 +87,11 @@ export class Project2 extends LitElement {
       font-weight: 400;
       font-size: 13px;
       font-family: "Effra", sans-serif;
+    }
+
+    simple-icon {
+      --simple-icon-width:70px;
+      --simple-icon-height:70px;
     }
   `;
 
@@ -116,12 +118,9 @@ export class Project2 extends LitElement {
                 </div>
               </div>
               <div class="creator">
-                <div class="creator-name">${this.creator}</div>
+                <div class="creator-name"> ${this.creator}</div>
               </div>
             </div>
-        <!-- </div>   -->
-       <!-- </div> -->
-      <!-- </main> -->
     `;
   }
 }

@@ -5,25 +5,25 @@ export default async function handler(request, res){
             "header": "Technology & Information",
             "img": "social:whatshot",
             "title": "APA Style Citations: Introduction",
-            "creator": "Victoria Raish"
+            "creator": "Creator: Victoria Raish"
         },
         {
             "header": "Education",
             "title": "IST Career Sources",
             "img": "social:school",
-            "creator": "Cassie Rosas-Carson"
+            "creator": "Creator: Cassie Rosas-Carson"
         },
         {
             "header": "Professional Skills",
             "title": "IST Careers - Meet a Coach - Level 2",
             "img": "social:people-outline",
-            "creator": "Rita Griffith"
+            "creator": "Creator: Rita Griffith"
         },
         {
             "header": "Agriculture & Natural Resources",
             "title": "[test] Treat Yourself",
             "img": "places:spa",
-            "creator": "Allain Daigle"
+            "creator": "Creator: Allain Daigle"
         }
     ];
 
