@@ -3,7 +3,7 @@ export default async function handler(request, res){
     const badgesearch = [
         {
             "header": "Technology & Information",
-            "img": "social:whatshot",
+            "img": "editor:border-color",
             "title": "APA Style Citations: Introduction",
             "creator": "Creator: Victoria Raish"
         },

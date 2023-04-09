@@ -1,0 +1,760 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "simple-icon",
+      "path": "./lib/simple-icon-button-lite.js",
+      "description": "`simple-icon`\n`Render an SVG based icon`",
+      "attributes": [
+        {
+          "name": "autofocus",
+          "type": "boolean"
+        },
+        {
+          "name": "toggles",
+          "type": "boolean"
+        },
+        {
+          "name": "toggled",
+          "type": "boolean"
+        },
+        {
+          "name": "aria-labelledby",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "controls",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "form",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "field-name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"button\""
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "autofocus",
+          "attribute": "autofocus",
+          "type": "boolean"
+        },
+        {
+          "name": "toggles",
+          "attribute": "toggles",
+          "type": "boolean"
+        },
+        {
+          "name": "toggled",
+          "attribute": "toggled",
+          "type": "boolean"
+        },
+        {
+          "name": "ariaLabelledby",
+          "attribute": "aria-labelledby",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "controls",
+          "attribute": "controls",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "form",
+          "attribute": "form",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "fieldName",
+          "attribute": "field-name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"button\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "simple-icon-button-lite",
+      "path": "./lib/simple-icon-button-lite.js",
+      "description": "`simple-icon`\n`Render an SVG based icon`",
+      "attributes": [
+        {
+          "name": "autofocus",
+          "type": "boolean"
+        },
+        {
+          "name": "toggles",
+          "type": "boolean"
+        },
+        {
+          "name": "toggled",
+          "type": "boolean"
+        },
+        {
+          "name": "aria-labelledby",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "controls",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "form",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "field-name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"button\""
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "autofocus",
+          "attribute": "autofocus",
+          "type": "boolean"
+        },
+        {
+          "name": "toggles",
+          "attribute": "toggles",
+          "type": "boolean"
+        },
+        {
+          "name": "toggled",
+          "attribute": "toggled",
+          "type": "boolean"
+        },
+        {
+          "name": "ariaLabelledby",
+          "attribute": "aria-labelledby",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "controls",
+          "attribute": "controls",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "form",
+          "attribute": "form",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "fieldName",
+          "attribute": "field-name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"button\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "simple-icon-button",
+      "path": "./lib/simple-icon-button.js",
+      "attributes": [
+        {
+          "name": "contrast",
+          "type": "number",
+          "default": "4"
+        },
+        {
+          "name": "autofocus",
+          "type": "boolean"
+        },
+        {
+          "name": "toggles",
+          "type": "boolean"
+        },
+        {
+          "name": "toggled",
+          "type": "boolean"
+        },
+        {
+          "name": "aria-labelledby",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "controls",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "form",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "field-name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "accent-color",
+          "description": "a selected accent-\"color\": grey, red, pink, purple, etc.",
+          "type": "string",
+          "default": "\"grey\""
+        },
+        {
+          "name": "dark",
+          "description": "make the default theme dark?",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "contrast",
+          "attribute": "contrast",
+          "type": "number",
+          "default": "4"
+        },
+        {
+          "name": "autofocus",
+          "attribute": "autofocus",
+          "type": "boolean"
+        },
+        {
+          "name": "toggles",
+          "attribute": "toggles",
+          "type": "boolean"
+        },
+        {
+          "name": "toggled",
+          "attribute": "toggled",
+          "type": "boolean"
+        },
+        {
+          "name": "ariaLabelledby",
+          "attribute": "aria-labelledby",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "controls",
+          "attribute": "controls",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "form",
+          "attribute": "form",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "fieldName",
+          "attribute": "field-name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "accentColor",
+          "attribute": "accent-color",
+          "description": "a selected accent-\"color\": grey, red, pink, purple, etc.",
+          "type": "string",
+          "default": "\"grey\""
+        },
+        {
+          "name": "dark",
+          "attribute": "dark",
+          "description": "make the default theme dark?",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "colors",
+          "default": "\"colors\""
+        }
+      ]
+    },
+    {
+      "name": "simple-icon-lite",
+      "path": "./lib/simple-icon-lite.js",
+      "description": "`simple-icon-lite`\n`Render an SVG based icon`",
+      "attributes": [
+        {
+          "name": "src",
+          "type": "string"
+        },
+        {
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "name": "no-colorize",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dir",
+          "type": "string",
+          "default": "\"documentDir\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "feFlood",
+          "type": "\"\" | TemplateResult<2>"
+        },
+        {
+          "name": "src",
+          "attribute": "src",
+          "type": "string"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string"
+        },
+        {
+          "name": "documentDir",
+          "type": "string"
+        },
+        {
+          "name": "useSafariPolyfill",
+          "type": "boolean"
+        },
+        {
+          "name": "safariMask",
+          "type": "string"
+        },
+        {
+          "name": "noColorize",
+          "attribute": "no-colorize",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dir",
+          "attribute": "dir",
+          "type": "string",
+          "default": "\"documentDir\""
+        }
+      ]
+    },
+    {
+      "name": "simple-iconset-demo",
+      "path": "./lib/simple-iconset-demo.js",
+      "description": "`simple-iconset-demo`",
+      "attributes": [
+        {
+          "name": "exclude",
+          "description": "a space-separated blacklist of iconsets by name",
+          "type": "string"
+        },
+        {
+          "name": "iconsets",
+          "description": "a space-separated list of paths to iconsets.json",
+          "type": "array"
+        },
+        {
+          "name": "include",
+          "description": "a space-separated whitelist of iconsets by name",
+          "type": "string"
+        },
+        {
+          "name": "imports",
+          "description": "a space-separated list of paths to iconsets.json",
+          "type": "array",
+          "default": "[]"
+        }
+      ],
+      "properties": [
+        {
+          "name": "exclude",
+          "attribute": "exclude",
+          "description": "a space-separated blacklist of iconsets by name",
+          "type": "string"
+        },
+        {
+          "name": "iconsets",
+          "attribute": "iconsets",
+          "description": "a space-separated list of paths to iconsets.json",
+          "type": "array"
+        },
+        {
+          "name": "include",
+          "attribute": "include",
+          "description": "a space-separated whitelist of iconsets by name",
+          "type": "string"
+        },
+        {
+          "name": "imports",
+          "attribute": "imports",
+          "description": "a space-separated list of paths to iconsets.json",
+          "type": "array",
+          "default": "[]"
+        }
+      ]
+    },
+    {
+      "name": "simple-iconset",
+      "path": "./lib/simple-iconset.js",
+      "properties": [
+        {
+          "name": "iconsets",
+          "type": "object",
+          "default": "{}"
+        },
+        {
+          "name": "iconlist",
+          "type": "never[]",
+          "default": "[]"
+        },
+        {
+          "name": "manifest",
+          "type": "object",
+          "default": "{}"
+        },
+        {
+          "name": "needsHydrated",
+          "type": "never[]",
+          "default": "[]"
+        }
+      ]
+    },
+    {
+      "name": "simple-icon",
+      "path": "./simple-icon.js",
+      "description": "`simple-icon`\n`Render an SVG based icon`",
+      "attributes": [
+        {
+          "name": "contrast",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "src",
+          "type": "string"
+        },
+        {
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "name": "no-colorize",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dir",
+          "type": "string",
+          "default": "\"documentDir\""
+        },
+        {
+          "name": "accent-color",
+          "description": "a selected accent-\"color\": grey, red, pink, purple, etc.",
+          "type": "string",
+          "default": "\"grey\""
+        },
+        {
+          "name": "dark",
+          "description": "make the default theme dark?",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "contrast",
+          "attribute": "contrast",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "feFlood",
+          "type": "\"\" | TemplateResult<2>"
+        },
+        {
+          "name": "src",
+          "attribute": "src",
+          "type": "string"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string"
+        },
+        {
+          "name": "documentDir",
+          "type": "string"
+        },
+        {
+          "name": "useSafariPolyfill",
+          "type": "boolean"
+        },
+        {
+          "name": "safariMask",
+          "type": "string"
+        },
+        {
+          "name": "noColorize",
+          "attribute": "no-colorize",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "dir",
+          "attribute": "dir",
+          "type": "string",
+          "default": "\"documentDir\""
+        },
+        {
+          "name": "accentColor",
+          "attribute": "accent-color",
+          "description": "a selected accent-\"color\": grey, red, pink, purple, etc.",
+          "type": "string",
+          "default": "\"grey\""
+        },
+        {
+          "name": "dark",
+          "attribute": "dark",
+          "description": "make the default theme dark?",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "colors",
+          "default": "\"colors\""
+        }
+      ]
+    },
+    {
+      "name": "simple-icon",
+      "path": "./src/simple-icon.js",
+      "description": "`simple-icon`\n`Render an SVG based icon`",
+      "attributes": [
+        {
+          "name": "contrast",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "accent-color",
+          "description": "a selected accent-\"color\": grey, red, pink, purple, etc.",
+          "type": "string",
+          "default": "\"grey\""
+        },
+        {
+          "name": "dark",
+          "description": "make the default theme dark?",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "feFlood",
+          "type": "\"\" | TemplateResult<2>"
+        },
+        {
+          "name": "useSafariPolyfill",
+          "type": "boolean"
+        },
+        {
+          "name": "contrast",
+          "attribute": "contrast",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "accentColor",
+          "attribute": "accent-color",
+          "description": "a selected accent-\"color\": grey, red, pink, purple, etc.",
+          "type": "string",
+          "default": "\"grey\""
+        },
+        {
+          "name": "dark",
+          "attribute": "dark",
+          "description": "make the default theme dark?",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "colors",
+          "default": "\"colors\""
+        }
+      ]
+    }
+  ]
+}

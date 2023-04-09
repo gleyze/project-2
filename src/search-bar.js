@@ -16,18 +16,21 @@ class SearchBar extends LitElement {
       box-shadow: 1px 1px 1px 2px gray;
       //margin: auto;
       margin-top: 5px;
+      
       width: 1000px;
+      height: 30px;
       border-radius: 5px;
       padding: 2px;
       
     }
     .searchInput {
-      width: 1200px;
-      height: 50px;
-      border-radius: 5px;
+      /* width: 1200px;
+      height: 50px; */
+      /* border-radius: 5px; */
     }
     .icon{
-      width:100spx;
+      width:120px;
+      
     }
   `;
 
